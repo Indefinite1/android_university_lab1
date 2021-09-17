@@ -1,5 +1,7 @@
 package com.codepath.bestsellerlistapp.models;
 
+import android.net.Uri;
+
 import com.google.gson.annotations.SerializedName;
 
 public class BestSellerBook {
@@ -24,4 +26,6 @@ public class BestSellerBook {
 
    @SerializedName("amazon_product_url")
    public String amazonUrl;
+    public int ranking;
+   public String image;
 }

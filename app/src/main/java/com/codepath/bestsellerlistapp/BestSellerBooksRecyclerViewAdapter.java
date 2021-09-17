@@ -3,12 +3,15 @@ package com.codepath.bestsellerlistapp;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
+import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.codepath.bestsellerlistapp.models.BestSellerBook;
 
+import java.text.BreakIterator;
 import java.util.List;
 
 /**
@@ -60,6 +63,8 @@ public class BestSellerBooksRecyclerViewAdapter extends RecyclerView.Adapter<Bes
         public final TextView mBookTitle;
         public final TextView mBookAuthor;
         public BestSellerBook mItem;
+        public TextView mRanking;
+        public ImageView mBookImage;
 
         public BookViewHolder(View view) {
             super(view);
